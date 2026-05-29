@@ -104,3 +104,7 @@ SHQ23-4872 PHP8.4 and Magento 2.4.8 compatibility
 SHQ23-4872 PHP8.4 and Magento 2.4.8 compatibility
 
 
+## 20.5.2 (2026-05-29)
+ENG26-1125 Updates for Magento 2.4.9 and PHP 8.5 compatibility
+
+

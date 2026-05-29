@@ -150,6 +150,9 @@ class Matrixrate extends \Magento\Shipping\Model\Carrier\AbstractCarrier impleme
                         }
                     }
                 } elseif ($item->getFreeShipping()) {
+                    // If this results in a different shipping method returning when a coupon is entered at the payment
+                    // step of checkout, it will cause Magento to show an error asking the user to
+                    // choose a new shipping method.
                     $freeShipping = is_numeric($item->getFreeShipping()) ? $item->getFreeShipping() : 0;
                     $freeQty += $item->getQty() - $freeShipping;
                     $freePackageValue += $item->getBaseRowTotal();
